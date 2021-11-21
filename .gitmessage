@@ -1,23 +1,18 @@
-# Title: Summary, imperative, start upper case, don't end with a period
-# No more than 50 chars. #### 50 chars is here: #
+# Title: ########50 characters###################
 #
-# Remember blank line between title and body.
-#
-# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
-# Wrap at 72 chars. ################################## which is here: #
+# Body: Explain *what* and *why* (not *how*). ########72 characters####
 # - The bullets are fine too
-# - Typically a dash or asterisk is used for the bullet, followed by a single space, with blank lines in between
+# - Typically a dash or asterisk is used for the bullets
+# - Followed by a single space, with blank lines in between
 # - Using a hanging indentation
 #
-# (Optional) Provide links or keys to any relevant tickets, articles or other resources
-# Example: Github issue #23
+# Github issue #123 (Optional)
+#
+# Note:
+# Special instructions, testing steps, rake, etc
 #
 # At the end: Include Co-authored-by for all contributors. 
-# Include at least one empty line before it. Format: 
 # Co-authored-by: name <user@users.noreply.github.com>
-
-# How to Write a Git Commit Message:
-# https://chris.beams.io/posts/git-commit/
 #
 # 1.Separate subject from body with a blank line
 # 2. Limit the subject line to 50 characters
@@ -42,5 +37,3 @@
 #    hack     (Temporary fix to make things move forward; please avoid it)
 #    WIP      (Work In Progress; for intermediate commits to keep patches reasonably sized)
 #    defaults (changes default options)
-#
-# Note: Multiple tags can be combined, e.g. [fix][jsr292] Fix issue X with methodhandles
