@@ -1,0 +1,46 @@
+# Title: Summary, imperative, start upper case, don't end with a period
+# No more than 50 chars. #### 50 chars is here: #
+#
+# Remember blank line between title and body.
+#
+# Body: Explain *what* and *why* (not *how*). Include task ID (Jira issue).
+# Wrap at 72 chars. ################################## which is here: #
+# - The bullets are fine too
+# - Typically a dash or asterisk is used for the bullet, followed by a single space, with blank lines in between
+# - Using a hanging indentation
+#
+# (Optional) Provide links or keys to any relevant tickets, articles or other resources
+# Example: Github issue #23
+#
+# At the end: Include Co-authored-by for all contributors. 
+# Include at least one empty line before it. Format: 
+# Co-authored-by: name <user@users.noreply.github.com>
+
+# How to Write a Git Commit Message:
+# https://chris.beams.io/posts/git-commit/
+#
+# 1.Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+
+# Tag can be 
+#    feat     (new feature)
+#    fix      (bug fix)
+#    refactor (refactoring code)
+#    style    (formatting, missing semi colons, etc; no code change)
+#    doc      (changes to documentation)
+#    test     (adding or refactoring tests; no production code change)
+#    version  (version bump/new release; no production code change)
+#    jsrXXX   (Patches related to the implementation of jsrXXX, where XXX the JSR number)
+#    jdkX     (Patches related to supporting jdkX as the host VM, where X the JDK version)
+#    dbg      (Changes in debugging code/frameworks; no production code change)
+#    license  (Edits regarding licensing; no production code change)
+#    hack     (Temporary fix to make things move forward; please avoid it)
+#    WIP      (Work In Progress; for intermediate commits to keep patches reasonably sized)
+#    defaults (changes default options)
+#
+# Note: Multiple tags can be combined, e.g. [fix][jsr292] Fix issue X with methodhandles
