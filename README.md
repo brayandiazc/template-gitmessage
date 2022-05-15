@@ -1,10 +1,13 @@
 # Template git messages
 
-Tips for git messages
+Structure of a good commit.
 
 ## Description
 
+Some tips so that the content of our commits is precise, easy to write, easy to read and easy to interpret.
+
 **Tips for git messages:**
+
 1. Separate subject from body with a blank line
 2. Limit the subject line to 50 characters
 3. Capitalize the subject line
@@ -13,7 +16,8 @@ Tips for git messages
 6. Wrap the body at 72 characters
 7. Use the body to explain what and why vs. how
 
-Type of title
+**Type of title:**
+
 - **feat**     (new feature)
 - **fix**      (bug fix)
 - **refactor** (refactoring code)
@@ -37,87 +41,57 @@ Instructions to obtain a copy of the project and implement it on a local machine
 
 Dependencies to run the project:
 
-- Operating system Ver. XXXX
-- Programming language Ver. XXXX
-- Framework and its version Ver. XXXX
-- Database Ver. XXXX
-- etc
+- Operating system Linux, Windows, MacOs all Versions.
+- Git all Version.
+- Know the markdown language.
+- Don't be afraid of the terminal.
 
 ### Installation 🔧
 
-Steps to install and run the project locally
+Steps to install and run the project locally:
 
-[commit]
-  template = ~/.gitmessage
-  
-```bash
-step 1
-```
-
-And repeat
+1. Clone the project:
 
 ```bash
-step 2
+git clone git@github.com:brayandiazc/gitmessage-template.git
 ```
 
-## Running the tests ⚙️
-
-Description of how to run the tests:
+2. Change the directory to the project:
 
 ```bash
-give an example
+cd gitmessage-template
 ```
 
-### Analyze end-to-end tests 🔩
-
-Explain the reasons for the tests, what they verify and how to interpret the results
-
-### Coding style tests ⌨️
-
-Description of style tests
+3. Copy the template files to the project:
 
 ```bash
-give an example
+cp -r .gitmessage-template/* .
 ```
 
-## Deployment 📦
+4. Change to root directory:
 
-Description of how to bring the project to production
+```bash
+cd
+```
+
+5. Confgig the git message template:
+
+```bash
+git config --global commit.template ~/.gitmessage
+```
+
+**Instructions for copy file:**
 
 ## Built with 🛠️
 
 Tools used to create the project
 
-- [Ruby](https://www.ruby-lang.org/en/) - Programming language used
-- [Ruby on Rails](https://rubyonrails.org) - The web framework used
-- [Ruby gems](https://rubygems.org) - Dependency manager
-- [Postgresql](https://www.postgresql.org) - Database
-- [Bulma IO](https://bulma.io) - Css Framework
-
-## Contribute 🖇️
-
-Please read [CONTRIBUTING.md](https://gist.github.com/brayandiazc/xxxxxx) for details of our code of conduct, and the process for submitting pull requests.
-
-## Wiki 📖
-
-Find more information on how to use it in [Wiki](https://github.com/your/project/wiki)
-
-## Medium
-
-Ways to get help:
-
-- Forum
-- Email
-- Group
-
-## Roadmap
-
-Ideas for future versions.
+- [Markdown](https://en.wikipedia.org/wiki/Markdown) - Language used
+- [Git](https://git-scm.com/) - Version control system
 
 ## Versioning 📌
 
 Version control system [Git](https://git-scm.com).
-For all available versions, check out the [tags in this repository](https://github.com/tu/proyecto/tags).
 
 ## Authors ✒️
 
@@ -125,21 +99,9 @@ People who have contributed to the project:
 
 - **Brayan DIaz C** - _Initial Work_ - [brayandiazc](https://github.com/brayandiazc)
 
-You can also look at the list of all [contributors](https://github.com/your/project/contributors) who have participated in this project.
-
 ## License 📄
 
-This project is under the License (Your License) - see the file [LICENSE.md] (LICENSE.md) for details
-
-## Expressions of Gratitude 🎁
-
-This readme file is developed using as reference the following projects:
-
-- [README-español.md](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a) - created by [Andrés Villanueva](https://gist.github.com/Villanuevand)
-- [Make a README](https://www.makeareadme.com) - created by [Danny Guo](https://github.com/dguo)
-- Invite a beer 🍺 or a coffee ☕ to someone on the team.
-- Give thanks publicly 🤓.
-- etc.
+This project is under the License MIT License. - see the file [LICENSE.md] (LICENSE.md) for details
 
 ---
 
