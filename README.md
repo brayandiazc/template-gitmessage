@@ -8,13 +8,13 @@ Some tips so that the content of our commits is precise, easy to write, easy to 
 
 ## Tips for Git Messages
 
-1. **Separate the title from the description using a blank line.**
-2. **The title must not contain more than 50 characters.**
-3. **Capitalize the first word of the title.**
-4. **Do not end the title with a period.**
-5. **Use the imperative mood in the title line.**
-6. **The description must not contain more than 72 characters per line.**
-7. **Use the description to explain what and why versus how.**
+1. Separate the title from the description using a blank line.
+2. The title must not contain more than 50 characters.
+3. Capitalize the first word of the title.
+4. Do not end the title with a period.
+5. Use the imperative mood in the title line.
+6. The description must not contain more than 72 characters per line.
+7. Use the description to explain what and why versus how.
 
 ### Recommended Title Types
 
