@@ -1,150 +1,145 @@
-# Template git messages
+# Git Message Template Repository
 
-Structure of a good commit.
+This repository contains a Git message template designed to help standardize and streamline commit messages across your projects. Consistent and clear commit messages are essential for maintaining a readable and maintainable project history.
 
 ## Description
 
-Some tips so that the content of our commits is precise, easy to write, easy to read and easy to interpret.
+Some tips so that the content of our commits is precise, easy to write, easy to read, and easy to interpret.
 
-**Tips for git messages:**
+## Tips for Git Messages
 
-1. Separate the title from the description using a blank line
-2. The title must not contain more than 50 characters
-3. The first word of the title is capitalized
-4. Don't end the title with a period
-5. Use the imperative mood in the title line
-6. the description must not contain more than 72 characters per line
-7. Use description to explain what and why versus how
+1. **Separate the title from the description using a blank line.**
+2. **The title must not contain more than 50 characters.**
+3. **Capitalize the first word of the title.**
+4. **Do not end the title with a period.**
+5. **Use the imperative mood in the title line.**
+6. **The description must not contain more than 72 characters per line.**
+7. **Use the description to explain what and why versus how.**
 
-**Type of title:**
+### Recommended Title Types
 
-- **feat**     (new feature)
-- **fix**      (bug fix)
-- **refactor** (refactoring code)
-- **style**    (formatting, missing semi colons, etc; no code change)
-- **doc**      (changes to documentation)
-- **test**     (adding or refactoring tests; no production code change)
-- **version**  (version bump/new release; no production code change)
-- **jsrXXX**   (Patches related to the implementation of jsrXXX, where XXX the JSR number)
-- **jdkX**     (Patches related to supporting jdkX as the host VM, where X the JDK version)
-- **dbg**      (Changes in debugging code/frameworks; no production code change)
-- **license**  (Edits regarding licensing; no production code change)
-- **hack**     (Temporary fix to make things move forward; please avoid it)
-- **wip**      (Work In Progress; for intermediate commits to keep patches reasonably sized)
-- **defaults** (changes default options)
+- **feat**: New feature
+- **fix**: Bug fix
+- **refactor**: Refactoring code
+- **style**: Formatting, missing semi-colons, etc.; no code change
+- **docs**: Changes to documentation
+- **test**: Adding or refactoring tests; no production code change
+- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- **perf**: Code change that improves performance
+- **ci**: Changes to our CI configuration files and scripts (e.g., GitHub Actions, CircleCI)
+- **build**: Changes that affect the build system or external dependencies (e.g., gulp, broccoli, npm)
+- **revert**: Reverts a previous commit
+- **wip**: Work In Progress; for intermediate commits to keep patches reasonably sized
+- **hack**: Temporary fix to make things move forward; please avoid it
 
-**Commit structure:**
+## Commit Structure
 
-```markdown
-Title: ########50 characters###################
+### Title (Subject Line)
 
-Body: Explain *what* and *why* (not *how*). ########72 characters####
-
-- The bullets are fine too
-- Typically a dash or asterisk is used for the bullets
-- Followed by a single space, with blank lines in between
-- Using a hanging indentation
-
-Github issue #123 (Optional)
-
-Note:
-Special instructions, testing steps, rake, etc
-
-At the end: Include Co-authored-by for all contributors.
-Co-authored-by: name <user@users.noreply.github.com>
-```
-
-**Example:**
+- **Purpose**: Summarizes the changes concisely.
+- **Format**: `<type>: <subject>`
+- **Example**:
 
 ```markdown
-feat: Add a new feature
+feat: add user authentication
+```
 
-This is a longer description of the commit. It should explain what the
-commit does and why it is needed. It should be written in a way that is
-understandable to a wide audience.
+### Body (Detailed Description)
 
-- The first line of the body should be 72 characters or less
-- The second line should be blank
-- The third line should be 72 characters or less
+- **Purpose**: Provides a more detailed explanation of the changes made and why they were made.
+- **Format**: Use the imperative mood (e.g., "Add", "Fix", "Update"). Wrap text at 72 characters. Separate paragraphs with a blank line.
+- **Example**:
 
-Github issue #123
+```markdown
+Fix issue with user login process by updating
+the authentication method. The previous method
+was not compatible with the new security requirements.
+
+This fix ensures that users can log in without errors
+and improves the overall security of the application.
+```
+
+### Footer (Optional)
+
+- **Purpose**: Includes any additional information, such as related issue numbers or references.
+- **Format**: Use keywords like `Closes`, `Fixes`, `Refs`, followed by the issue number.
+- **Example**:
+
+```markdown
+Closes #123
+```
+
+### Note
+
+- **Purpose**: Special instructions, testing steps, rake tasks, etc.
+- **Example**:
+
+```markdown
+Note:
+Special instructions, testing steps, rake, etc.
+```
+
+### Co-authored-by
+
+- **Purpose**: Include for all contributors at the end of the commit message.
+- **Format**: `Co-authored-by: name <user@users.noreply.github.com>`
+- **Example**:
+
+```markdown
+Co-authored-by: John Doe <john.doe@example.com>
+```
+
+## Example Commit Message
+
+```markdown
+feat: add user authentication
+
+Add a new feature for user authentication using JWT. This feature allows
+users to securely log in and receive a token for subsequent requests.
+
+- Implemented JWT-based authentication
+- Added middleware to protect routes
+- Updated user model to include authentication methods
+
+Closes #45
 
 Note:
-Special instructions, testing steps, rake, etc
 
-Co-authored-by: name <user@users.noreply.github.com>
+- Remember to update environment variables with JWT secret key.
+- Ensure database migrations are applied before testing.
+
+Co-authored-by: Jane Doe <jane.doe@example.com>
 ```
 
-## Starting 🚀
+## How to Use the Template
 
-Instructions to obtain a copy of the project and implement it on a local machine for development and testing.
-
-### Pre-requisites 📋
-
-Dependencies to run the project:
-
-- Operating system Linux, Windows, MacOs all Versions.
-- Git all Version.
-- Know the markdown language.
-- Don't be afraid of the terminal.
-
-### Installation 🔧
-
-Steps to install and run the project locally:
-
-Clone the project:
-
-```bash
-git clone git@github.com:brayandiazc/gitmessage-template.git
-```
-
-Change the directory to the project:
-
-```bash
-cd gitmessage-template
-```
-
-Copy the template files to the project:
-
-```bash
-cp .gitmessage-template/* .
-```
-
-Change to root directory:
-
-```bash
-cd
-```
-
-Config the git message template:
+1. **Create the Template File**: The template is provided in the `.gitmessage` file in this repository.
+2. **Configure Git**: Set the template as your default commit message template by running the following command:
 
 ```bash
 git config --global commit.template ~/.gitmessage
 ```
 
-**Instructions for copy file:**
+By following this template, you can improve the quality of your commit messages, making them more helpful for your team and for future reference.
 
-## Built with 🛠️
+## Author
 
-Tools used to create the project
+- [Brayan Diaz C](https://github.com/brayandiazc)
 
-- [Markdown](https://en.wikipedia.org/wiki/Markdown) - Language used
-- [Git](https://git-scm.com/) - Version control system
+## License
 
-## Versioning 📌
-
-Version control system [Git](https://git-scm.com).
-
-## Authors ✒️
-
-People who have contributed to the project:
-
-- **Brayan Diaz C** - _Initial Work_ - [brayandiazc](https://github.com/brayandiazc)
-
-## License 📄
-
-This project is under the License MIT License. - see the file [LICENSE.md] (LICENSE.md) for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-⌨️ with ❤️ by [Brayan Diaz C](https://brayandiazc.com) 😊
+## Additional Tips
+
+Here are some extra tips to make the most out of your README:
+
+- Keep each section as concise as possible. Avoid unnecessary information as it can be overwhelming for the reader.
+- Ensure your installation and deployment instructions are detailed and precise. If there are additional steps the reader needs to take (such as installing extra dependencies), make sure to include them.
+- Visuals (images, GIFs) are very helpful to quickly convey what your project does and how to use it. If possible, include screenshots of your application in action or GIFs demonstrating its use.
+
+---
+
+⌨️ with ❤️ by [Brayan Diaz C](https://github.com/brayandiazc) 😊
