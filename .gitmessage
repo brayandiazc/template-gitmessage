@@ -1,16 +1,28 @@
 # Title: ########50 characters###################
-#
+# Summarize the changes concisely.
+# Example: Fix issue with user login process
+
 # Body: Explain *what* and *why* (not *how*). ########72 characters####
+# Provide a detailed description of the changes made and their purpose.
+# Example:
 #
-# - The bullets are fine too
+# Fix issue with user login process by updating
+# the authentication method. The previous method
+# was not compatible with the new security requirements.
+#
+# - Bullets are fine too
 # - Typically a dash or asterisk is used for the bullets
 # - Followed by a single space, with blank lines in between
 # - Using a hanging indentation
-#
+
 # Github issue #123 (Optional)
-#
+# Include any related issue numbers, for example:
+# Closes #123
+
 # Note:
-# Special instructions, testing steps, rake, etc
-#
+# Special instructions, testing steps, rake tasks, etc.
+# Example:
+# - Include instructions for running specific tests
+
 # At the end: Include Co-authored-by for all contributors.
 # Co-authored-by: name <user@users.noreply.github.com>
