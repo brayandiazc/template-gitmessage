@@ -147,14 +147,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## Additional Tips
-
-Here are some extra tips to make the most out of your README:
-
-- Keep each section as concise as possible. Avoid unnecessary information as it can be overwhelming for the reader.
-- Ensure your installation and deployment instructions are detailed and precise. If there are additional steps the reader needs to take (such as installing extra dependencies), make sure to include them.
-- Visuals (images, GIFs) are very helpful to quickly convey what your project does and how to use it. If possible, include screenshots of your application in action or GIFs demonstrating its use.
-
----
-
 ⌨️ with ❤️ by [Brayan Diaz C](https://github.com/brayandiazc) 😊
