@@ -1,4 +1,4 @@
-# Git Message Template Repository
+# Git Message Template
 
 This repository contains a Git message template designed to help standardize and streamline commit messages across your projects. Consistent and clear commit messages are essential for maintaining a readable and maintainable project history.
 
