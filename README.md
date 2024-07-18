@@ -113,14 +113,29 @@ Co-authored-by: Jane Doe <jane.doe@example.com>
 
 ## How to Use the Template
 
-1. **Create the Template File**: The template is provided in the `.gitmessage` file in this repository.
-2. **Configure Git**: Set the template as your default commit message template by running the following command:
+1. Clone the Repository: Clone this repository to your local machine.
+
+```bash
+git clone git@github.com:brayandiazc/template-gitmessage.git
+```
+
+2. Navigate to the Root Directory: Change to the directory where you cloned the repository.
+
+```bash
+cd template-gitmessage
+```
+
+3. Copy the Template File: Copy the .gitmessage file to your root directory.
+
+```bash
+cp .gitmessage ~
+```
+
+4. Configure Git: Set the template as your default commit message template by running the following command:
 
 ```bash
 git config --global commit.template ~/.gitmessage
 ```
-
-By following this template, you can improve the quality of your commit messages, making them more helpful for your team and for future reference.
 
 ## Author
 
